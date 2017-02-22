@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Tic Tac Toe</title>
+    <script src="js/gameengine.js"></script>
+    <script src="js/checkwinner.js"></script>
+    <script type="text/javascript" src="../../js/DateTime.js"></script>
+
+    <link href="../../css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/css.css" />
+    <link rel="stylesheet" href="../../css/MainCSSstyling.css" />
+
+</head>
+<body>
+    <header class="navbar">
+
+        <nav class="navbar-inverse">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+
+                <a class="navbar-brand" href="../../index.html">Home</a>
+            </div>
+
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav"></ul>
+
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li><a href="../Isotop_Destroyer/isotope.html">Game: Hard Town Meltdown</a></li>
+                    <li><a href="../TicTacToe/tictactoe.html">Game: Tic Tac Mother fucking toe</a></li>
+                    <li><a href="../../HTML/Contact.html">Contact</a></li>
+                    <li><a href="../../HTML/About.html">About</a></li>
+                    <li><a id="clock"></a></li>
+                </ul>
+            </div>
+        </nav>
+
+
+    </header>
+    <div class="center" id="titel">Tic Tac Toe</div>
+
+    <table class="center">
+        <tr>
+            <td>
+                <form>
+                    <input type="button" class="button" id="btn1" onclick="button_click(1)" />
+                    <input type="button" class="button" id="btn2" onclick="button_click(2)" />
+                    <input type="button" class="button" id="btn3" onclick="button_click(3)" /><br />
+                    <input type="button" class="button" id="btn4" onclick="button_click(4)" />
+                    <input type="button" class="button" id="btn5" onclick="button_click(5)" />
+                    <input type="button" class="button" id="btn6" onclick="button_click(6)" /><br />
+                    <input type="button" class="button" id="btn7" onclick="button_click(7)" />
+                    <input type="button" class="button" id="btn8" onclick="button_click(8)" />
+                    <input type="button" class="button" id="btn9" onclick="button_click(9)" />
+                </form>
+            </td>
+        </tr>
+    </table>
+
+    <div>
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    </div>
+    <footer class="footer">
+        <p class="text-muted">DEF WebDesign 2017. All rights reserved</p>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+</body>
+</html>

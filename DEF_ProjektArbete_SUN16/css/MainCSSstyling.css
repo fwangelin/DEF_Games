@@ -1,0 +1,94 @@
+﻿
+/*Bodyns height är satt till 100% för att ge footern lite space, detta går dock inte att få till utan att ändra många standarder i originalet.
+    background-color är en överflödig för att snabbt kunna återvända till en svart bakgrund
+*/ 
+body {
+    height: 100%;
+    margin: 0;
+    background-image: url("../img/mainBackground.jpg");
+    background-color: #000000;
+}
+
+/*Här sätter vi lite design på Containern*/
+.container{
+    min-height: 100%;
+    position: center;
+}
+/* vår footer får en relative position för att énkelt följa med vår meny och inte vara fast på skärmen.*/
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  line-height: 30px; 
+  background-color: #505050;
+  margin:auto;
+  text-align: center;
+}
+
+/*Här skapar jag en background color med 0.6 (60%) opasity för att få mer djup i bilden.*/
+.popover-bottom {
+  margin: 0;
+  padding: 8px 14px;
+  font-size: 20px;
+  background-color: rgba(255,255,255,0.6);
+  border-radius: 0 0 25px 25px ;
+  max-width: 80%;
+}
+/* Vår design för sign up for beta på index.html*/
+.signUpForBeta{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* Vår design för count down klocka på index.html*/
+.countDownClockGraphics {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 25px;
+}
+
+/* Här visar vi hur kontrollerna fungerar för Emirs Isotope-game*/
+.displayControls{
+    text-align: center;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 25px;
+}
+
+hr {
+    margin: auto;
+    width: 50%;
+}
+
+/* Dessa är connectade till mitt jqueryMain.js dokument. Dessa (inklusive panel nedan) är knutna till våra 
+    taggar i index.html
+*/
+.panel, .flip {
+    padding: 5px;
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+}
+
+.panel {
+    padding: 50px;
+    display: none;
+}
+
+/* Eftersom vår kära <center> tag är borttagen så får vi skapa oss en egen rackare här*/
+.center{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+

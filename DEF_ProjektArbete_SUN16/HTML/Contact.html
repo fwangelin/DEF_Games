@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>DEF Games Presents</title>
+            <link href ="../css/StyleSheet.css" rel="stylesheet">    
+            <link href ="../css/bootstrap.css" rel="stylesheet">
+            <link href ="../css/footer.css" rel="stylesheet"> 
+            <link href="../css/MainCSSstyling.css" rel="stylesheet" />
+            <script type="text/javascript" src="../js/CheckContentInForm.js"></script>
+            <script type="text/javascript" src="../js/DateTime.js"></script>
+  </head>
+
+<body>   
+ <header class ="navbar">
+    
+     <nav class="navbar-inverse">
+           <div class="navbar-header">
+             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+               <span class="sr-only">Toggle navigation</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+             </button>
+             
+             
+             <a class="navbar-brand" href="../index.html">Home</a>
+           </div>
+
+       
+           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+             <ul class="nav navbar-nav">
+             </ul>
+             
+             <ul class="nav navbar-nav navbar-right">
+
+
+                       <li><a href="../JSGames/Isotop_Destroyer/isotope.html">Game: Hard Town Meltdown</a></li>
+                       <li><a href="../JSGames/TicTacToe/tictactoe.html">Game: Tic Tac Mother fucking toe</a></li>
+                       <li role="separator" class="divider"></li>
+                       <li><a href="../HTML/Contact.html">Contact</a></li>
+                       <li><a href="../HTML/About.html">About</a></li>
+                       <li role="separator" class="divider"></li>
+                       <li><a id="clock"></a></li>
+                     </ul>
+               </div>
+       </nav>
+ </header>
+
+              <br />
+
+        <div class="popover-title center">Contact </div>
+        <div class="popover-content2 center">
+
+            <form name="form1" action="http://juhax.com/dotnet/kontakt2/contact.php" onsubmit="return validateEmailForBetaSignup()" method="post">
+
+                <h5> Name</h5>
+                <input type="text" name="name" size="30" />
+                <!--<h5> Password </h5>-->
+                <input type="hidden" value="dotnet" name="password" size="30" />
+                <h5> Email </h5>
+                <input type="email" name="email" size="30" />
+                <h5> inquiry </h5>
+                <textarea name="message" rows="6" style="width:222px"></textarea>
+                <br />
+                <input type="submit" name="Send" value="Send" class="btn btn-success" />
+                <input type="reset" name="Clear" value="Clear" class="btn btn-danger" />
+            </form>
+        </div>
+        <div class="popover-bottom center"></div>
+
+    <div><br /><br /><br /><br /><br /><br /><br /><br /><br /></div>
+         <footer class="footer">
+        <p class="text-muted">DEF WebDesign 2017. All rights reserved</p>
+    </footer>
+
+    
+      
+      
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
+</html>

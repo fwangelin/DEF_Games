@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Hard Town Meltdown</title>
+    <link rel="stylesheet" href="CSS/GameGfx.css">
+
+    <link href="../../css/bootstrap.css" rel="stylesheet">
+    <link href="../../css/MainCSSstyling.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../css/MainCSSstyling.css" />
+    <script type="text/javascript" src="../../js/DateTime.js"></script>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        canvas {
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+    
+</head>
+<body>
+    <header class="navbar">
+
+        <nav class="navbar-inverse">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+
+                <a class="navbar-brand" href="../../index.html">Home</a>
+            </div>
+
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav"></ul>
+
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li><a href="../Isotop_Destroyer/isotope.html">Game: Hard Town Meltdown</a></li>
+                    <li><a href="../TicTacToe/tictactoe.html">Game: Tic Tac Mother fucking toe</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="../../HTML/Contact.html">Contact</a></li>
+                    <li><a href="../../HTML/About.html">About</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a id="clock"></a></li>
+                </ul>
+            </div>
+        </nav>
+
+
+    </header>
+
+    <canvas class="gameBackground" id="gameScene" width="480" height="500"></canvas>
+
+    <div style="display:none;">
+        <img id="nuke" src="Graphics/nuke.png" width="50" height="50">
+    </div>
+    <div style="display:none;">
+        <img id="barrell" src="Graphics/barrell.jpg" width="50" height="50">
+    </div>
+    <div style="display:none;">
+        <img id="glow" src="Graphics/glow.jpg" width="50" height="50">
+    </div>
+    <audio id="boing" src="Audio/boing.mp3" style="display: none;"></audio>
+    <audio id="explosion" src="Audio/explosion.mp3" style="display: none;"></audio>
+    <audio id="win" src="Audio/win.mp3" style="display: none;"></audio>
+    <audio id="lose" src="Audio/lose.mp3" style="display: none;"></audio>
+    <audio id="liquid" src="Audio/liquid.mp3" style="display: none;"></audio>
+
+    <script src="Gameengine.js"></script>
+
+
+    <div class="displayControls">
+        <h3>Controls</h3>
+        <h4>Move left: A key  :  Move right: D key</h4>
+
+    </div>
+
+
+    <footer class="footer">
+        <p class="text-muted">DEF WebDesign 2017. All rights reserved</p>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+      <!-- Börjar med att köra in våra csser och jser -->
+    <title>DEF Games Presents</title>
+    <link href ="css/StyleSheet.css" rel="stylesheet">    
+    <link href ="css/bootstrap.css" rel="stylesheet">
+    <link href ="css/footer.css" rel="stylesheet"> 
+    <link href="css/MainCSSstyling.css" rel="stylesheet" />
+    <script type="text/javascript" src="js/CheckContentInForm.js"></script>
+    <script type="text/javascript" src="js/DateTime.js"></script>
+  
+  </head>
+
+<body>   
+    <!-- Här sätter vi vår Navbar som är anpassad för mobilversion, dessa iD och classer kommer från Bootstrap -->
+ <header class ="navbar">
+   
+     <nav class="navbar-inverse">
+           <div class="navbar-header">
+             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+               <span class="sr-only">Toggle navigation</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+             </button>
+             
+             <!-- Här lägger vi hemknappen som alltid pekar mot index -->
+             <a class="navbar-brand" href="index.html">Home</a>
+           </div>
+
+            <!-- Här fortsätter vi vårt innehåll i vår navigationsbar. Dessa hämtar vi klasser och ID från Bootstrap -->
+           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+             <ul class="nav navbar-nav">
+             </ul>
+             <!-- Här lägger vi att navigationen hamnar till höger i övre bild. Nedan en lista med våra spel och kontakt samt about  -->
+             <ul class="nav navbar-nav navbar-right">
+
+                       <li><a href="JSGames/Isotop_Destroyer/isotope.html">Game: Hard Town Meltdown</a></li>
+                       <li><a href="JSGames/TicTacToe/tictactoe.html">Game: Tic Tac Mother fucking toe</a></li>
+                       <li role="separator" class="divider"></li>
+                       <li><a href="HTML/Contact.html">Contact</a></li>
+                       <li><a href="HTML/About.html">About</a></li>
+                       <li role="separator" class="divider"></li>
+                       <li><a id="clock"></a></li>
+                     </ul>
+               </div>
+       </nav>    
+          
+                 
+ </header>
+           <!-- Här lägger jag klockan som räknar ner, koden finns i DateTime.js -->
+                  <div class="countDownClockGraphics">
+                      <h1>BETA COMING SOON</h1>
+                      <hr>
+                      <p id="countDownClock" style="font-size:30px"></p>
+                  </div>
+    <br />
+    <br />
+    <!-- Här kickar vår jqueryMain in och via CSSen visar vi en togglemeny som från början är gömd och kommer fram vid klick -->
+    <div class="signUpForBeta">
+        <div id="flip" class="btn btn-info">Sign up for beta</div>
+        <div id="signupPanel" class="panel-body" style="display: none;">
+            <!-- Till nedan form så har jag lagt till function från CheckContentInForm.js
+                Denna tittar efter ett innehåll i email. Finns inget så kan vi inte skicka formuläret
+                Man lägger till "onsubmit enligt nedan, sen går resten av checken i js filen." -->
+            <form name="form1" action="http://juhax.com/dotnet/kontakt2/contact.php" onsubmit="return validateEmailForBetaSignup()" method="post">
+
+                <!-- Lägger till hidden samt ett value, så vi kan skicka formuläret utan ett password och även så man slipper se att det finns ett password -->
+
+                <!--<h5> Name</h5>-->
+                <input type="hidden" name="name" size="30" />
+                <!--<h5> Password </h5>-->
+                <input type="hidden" value="dotnet" name="password" size="30" />
+                <!--<h5> Email </h5>-->
+                <input type="email" placeholder="Enter E-mail" name="email" size="30" />
+                <!--<h5> inquiry </h5>-->
+                <input type="submit" name="Send" value="Sign up" class="btn btn-success" />
+                <input type="reset" name="Clear" value="Clear" class="btn btn-danger" />
+            </form>
+        </div>
+    </div>
+    <!-- Massa breaks för att få ner footern på rätt plats. -->
+    <div><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /></div>
+         <footer class="footer">
+        <p class="text-muted">DEF WebDesign 2017. All rights reserved</p>
+    </footer>
+ 
+      
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jqueryMain.js"></script>
+  </body>
+</html>

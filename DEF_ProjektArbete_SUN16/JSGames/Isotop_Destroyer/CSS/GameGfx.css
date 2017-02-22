@@ -1,0 +1,37 @@
+﻿.gameBackground {
+  background: url(../Graphics/nukebackground.jpg);
+  background-size: 480px 500px;
+  background-repeat: no-repeat;
+  width: 480px;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+#ball {
+  background: url(../Images/ball.png) no-repeat content-box;
+  background-size: contain;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 135px;
+  top: 100px;
+  border-radius: 15px;
+}
+
+#racket {
+  background: url(../Images/board.png) no-repeat content-box;
+  background-size: contain;
+  left: 110px;
+  top: 360px;
+  position: absolute;
+  width: 80px;
+  height: 20px;
+}
+
+
+
+
+
